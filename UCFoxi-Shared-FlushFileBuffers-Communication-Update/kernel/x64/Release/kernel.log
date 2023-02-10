@@ -1,0 +1,26 @@
+﻿  Building 'kernel' with toolset 'WindowsKernelModeDriver10.0' and the 'Universal' target platform.
+  Microsoft(R) C/C++ Optimizing Compiler Version 19.33.31631 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  cl /c /Ix64\Release\ /Zi /W4 /WX- /diagnostics:column /Ox /Os /Oy- /D _WIN64 /D _AMD64_ /D AMD64 /D _WIN32_WINNT=0x0A00 /D WINVER=0x0A00 /D WINNT=1 /D NTDDI_VERSION=0xA00000C /D KMDF_VERSION_MAJOR=1 /D KMDF_VERSION_MINOR=15 /GF /Gm- /Zp8 /GS- /guard:cf /Gy /fp:precise /Qspectre /Zc:wchar_t- /Zc:forScope /Zc:inline /GR- /Fo"x64\Release\\" /Fd"x64\Release\vc143.pdb" /external:W4 /Gz /wd4603 /wd4627 /wd4986 /wd4987 /FI"C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\warning.h" /FC /errorReport:prompt /kernel -cbstring -d2epilogunwind  /d1nodatetime /d1import_no_registry /d2AllowCompatibleILVersions /d2Zi+ CallbackHandler.cpp DriverMain.cpp Utils.cpp
+  CallbackHandler.cpp
+C:\Users\epic\Desktop\Shared-FlushFileBuffers-Communication-main\kernel\Utils.h(77,3): warning C4211: 非標準の拡張機能が使用されています: extern が static に再定義されました。
+C:\Users\epic\Desktop\Shared-FlushFileBuffers-Communication-main\kernel\CallbackHandler.cpp(31,24): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+C:\Users\epic\Desktop\Shared-FlushFileBuffers-Communication-main\kernel\CallbackHandler.cpp(83,23): warning C4018: '<': signed と unsigned の数値を比較しようとしました。
+  DriverMain.cpp
+C:\Users\epic\Desktop\Shared-FlushFileBuffers-Communication-main\kernel\Utils.h(77,3): warning C4211: 非標準の拡張機能が使用されています: extern が static に再定義されました。
+C:\Users\epic\Desktop\Shared-FlushFileBuffers-Communication-main\kernel\DriverMain.cpp(78,52): warning C4100: 'dwSize': 引数は関数の本体部で 1 度も参照されません。
+C:\Users\epic\Desktop\Shared-FlushFileBuffers-Communication-main\kernel\DriverMain.cpp(78,29): warning C4100: 'lpBaseAddress': 引数は関数の本体部で 1 度も参照されません。
+C:\Users\epic\Desktop\Shared-FlushFileBuffers-Communication-main\kernel\Utils.h(97,73): warning C4996: 'ExAllocatePool': ExAllocatePool is deprecated, use ExAllocatePool2.
+C:\Users\epic\Desktop\Shared-FlushFileBuffers-Communication-main\kernel\DriverMain.cpp(54): message : コンパイル対象の関数 テンプレート インスタンス化 'type Utils::Registry::ReadRegistry<LONG64>(UNICODE_STRING,UNICODE_STRING)' のリファレンスを確認してください
+          with
+          [
+              type=LONG64
+          ]
+  Utils.cpp
+C:\Users\epic\Desktop\Shared-FlushFileBuffers-Communication-main\kernel\Utils.h(77,3): warning C4211: 非標準の拡張機能が使用されています: extern が static に再定義されました。
+  コードを生成中...
+C:\Users\epic\Desktop\Shared-FlushFileBuffers-Communication-main\kernel\DriverMain.cpp(23): warning C4739: 変数 'time' への参照はそのストレージ領域を超えています
+C:\Users\epic\Desktop\Shared-FlushFileBuffers-Communication-main\kernel\CallbackHandler.cpp(105): warning C4702: 制御が渡らないコードです。
+C:\Users\epic\Desktop\Shared-FlushFileBuffers-Communication-main\kernel\CallbackHandler.cpp(52): warning C4702: 制御が渡らないコードです。
+  kernel.vcxproj -> C:\Users\epic\Desktop\Shared-FlushFileBuffers-Communication-main\x64\Release\Deruta Nigger Pasted.sys
+  Driver is 'Universal'.
